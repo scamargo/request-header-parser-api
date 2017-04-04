@@ -8,7 +8,8 @@ app.get('/',function(req,res){
     result['ipaddress'] = req.ip;
     //result['ipaddress'] = req.connection.remoteAddress;
     result['language'] = parseAcceptLanguage(req)[0].value;
-    result['software'] = 'some-software';
+    var regExp = new RegExp(/\(([^)]+)\)/)
+    result['software'] = regExp.exec(req.get("User-Agent"))[1];
     res.send(result);
 });
 
