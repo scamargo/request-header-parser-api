@@ -1,0 +1,24 @@
+{
+  "name": "request_header",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scamargo/request-header-parser-api.git"
+  },
+  "author": "Sergio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scamargo/request-header-parser-api/issues"
+  },
+  "homepage": "https://github.com/scamargo/request-header-parser-api#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.15.2",
+    "parse-accept-language": "^1.0.2"
+  }
+}
