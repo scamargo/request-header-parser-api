@@ -4,6 +4,8 @@ var parseAcceptLanguage = require('parse-accept-language');
 var app = express();
 var result = {};
 
+var port = process.env.PORT || 8080;
+
 app.get('/',function(req,res){
 
     result['ipaddress'] = getClientIP(req);
@@ -24,6 +26,6 @@ function getClientIP(req) {
     return ip;
 }
 
-app.listen(8080, function(){
-    console.log("listening on 8080");
+app.listen(port, function(){
+    console.log("listening on "+port);
 });
